@@ -1,5 +1,6 @@
 ##git的使用心得
 ###git安装
+```
 Administrator@2012-20131015RQ MINGW32 ~
 $ git init      //在此文件目录下生成一个本地仓库，会在此文件夹下自动生成一个.git文件，.git文件用来记录版本信息
 Initialized empty Git repository in C:/Users/Administrator/.git/
@@ -223,7 +224,7 @@ Unpacking objects: 100% (3/3), done.
 From github.com:appleCXT/gittest
  * branch            master     -> FETCH_HEAD
  * [new branch]      master     -> origin/master
-fatal: refusing to merge unrelated histories
+  fatal: refusing to merge unrelated histories
 
 Administrator@2012-20131015RQ MINGW32 /d/study-git (master)
 $ git push -u origin master //github新建的仓库有自带的readme文件，所以git push 会拒绝
@@ -239,7 +240,7 @@ Administrator@2012-20131015RQ MINGW32 /d/study-git (master)
 $ git pull --rebase origin master //git push 被拒绝的解决方法
 From github.com:appleCXT/gittest
  * branch            master     -> FETCH_HEAD
-First, rewinding head to replay your work on top of it...
+  First, rewinding head to replay your work on top of it...
 
 Applying: 添加文件readme
 Applying: xiugai
@@ -256,3 +257,4 @@ remote: Resolving deltas: 100% (2/2), done.
 To github.com:appleCXT/gittest.git
    c1124ab..cfd5564  master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+```
